@@ -12,8 +12,8 @@ class Email extends LBase
     {
         $mail = new PHPMailer;
         $mail = $this->getmailconfig($mail);
-        $mail->From = "formorder@gmail.com";
-        $mail->FromName = "From Email";
+        $mail->From = "staff@fancygrocery.com";
+        $mail->FromName = "Fancy Grocery";
         $mail->addAddress($data['email'], $data['name']);
         $mail->isHTML(true);
         $mail->Subject = "Order Created";
